@@ -1,24 +1,23 @@
-import { useEffect, useRef } from 'react'
-import './App.css'
-import WebPushSDK from 'sdk-web-push';
+import { useEffect, useRef } from "react";
+import "./App.css";
+import WebPushSDK from "sdk-web-push";
 
 function App() {
-
   const webPushRef = useRef<null | WebPushSDK>(null);
 
-  useEffect(()=>{
+  useEffect(() => {
     webPushRef.current = new WebPushSDK({
-       ask: 'soft',
-       applicationServerKey: import.meta.env.VITE_WEB_PUSH_SERVER_KEY
-    })
-  }, [])
+      userID: "mehtab-gill",
+      webPushKey: import.meta.env.VITE_WEB_PUSH_SERVER_KEY,
+    });
+  }, []);
 
   return (
     <div>
       <h1>Home Page</h1>
-      <button id='subscribe-button'>Subscribe</button>
+      <button id="subscribe-button">Subscribe</button>
     </div>
   );
 }
 
-export default App
+export default App;
