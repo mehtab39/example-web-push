@@ -1,0 +1,1 @@
+importScripts('http://localhost:8080/service-worker.js')
