@@ -8,7 +8,8 @@ function App() {
   useEffect(() => {
     webPushRef.current = new WebPushSDK({
       userID: "mehtab-gill",
-      webPushKey: import.meta.env.VITE_WEB_PUSH_SERVER_KEY,
+     // webPushKey: import.meta.env.VITE_WEB_PUSH_SERVER_KEY,
+      webPushKey: 'john_doe'
     });
   }, []);
 
