@@ -3,11 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "tsc --noEmit --skipLibCheck --incremental false"
-    ]
-  },
+  
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
