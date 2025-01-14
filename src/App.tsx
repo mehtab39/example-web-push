@@ -16,9 +16,18 @@ function App() {
   return (
     <div>
       <h1>Home Page</h1>
-      <button id="subscribe-button">Subscribe me!!</button>
+      <Button/>
     </div>
   );
 }
+
+interface IButton{
+  onClick: (e: MouseEvent<HTMLButtonElement, MouseEvent>) => void
+}
+
+const Button = ({onClick}: IButton) => {
+  return  <button id="subscribe-button"  onClick={onClick}>Subscribe me!!</button>
+}
+
 
 export default App;

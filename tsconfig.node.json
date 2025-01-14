@@ -5,13 +5,16 @@
     "lib": ["ES2023", "dom"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "composite": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
 
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": false,
     "jsx": "react-jsx",
 
     /* Linting */
