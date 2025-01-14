@@ -22,7 +22,7 @@ function App() {
 }
 
 interface IButton{
-  onClick: (e: MouseEvent<HTMLButtonElement, MouseEvent>) => void,
+  onClick: (e: React.MouseEvent ) => void,
 }
 
 const Button = ({onClick}: IButton) => {
