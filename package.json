@@ -3,18 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "lint-staged": {
-    "src/**/*.{ts,tsx}": [
-      "tsc --noEmit --jsx react-jsx" 
-    ]
-  },
-  
+ 
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .  --config .eslintrc.js",
     "preview": "vite preview",
     "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+        "tsc-files --noEmit" 
+    ]
   },
   "dependencies": {
     "react": "^18.3.1",
