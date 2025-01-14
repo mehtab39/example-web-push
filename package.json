@@ -14,7 +14,7 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "**/*.{ts,tsx}": "tsc-files --pretty"
+    "**/*.{ts,tsx}": "tsc-files --pretty --strict"
   },
   "dependencies": {
     "react": "^18.3.1",

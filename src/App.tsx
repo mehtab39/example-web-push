@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <h1>Home Page</h1>
-      <Button/>
+      <Button color='blue'/>
     </div>
   );
 }
