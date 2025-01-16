@@ -16,18 +16,9 @@ function App() {
   return (
     <div>
       <h1>Home Page</h1>
-      <Button color='blue'/>
+      <button id="subscribe-button">Subscribe me!!</button>
     </div>
   );
 }
-
-interface IButton{
-  onClick: (e: React.MouseEvent ) => void,
-}
-
-const Button = ({onClick}: IButton) => {
-  return  <button id="subscribe-button"  onClick={onClick}>Subscribe me!!</button>
-}
-
 
 export default App;
